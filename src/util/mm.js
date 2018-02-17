@@ -1,10 +1,12 @@
 
 
 'use strict';
+
 // var Hogan = require('hogan');
 var conf = {
     serverHost : ''
 };
+
 var _mm = {
     // 网络请求
     request : function(param){
@@ -33,6 +35,7 @@ var _mm = {
             }
         });
     },
+
     // 获取服务器地址
     getServerUrl : function(path){
         return conf.serverHost + path;
@@ -77,6 +80,7 @@ var _mm = {
     doLogin : function(){
         window.location.href = './user-login.html?redirect=' + encodeURIComponent(window.location.href);
     },
+
     goHome : function(){
         window.location.href = './index.html';
     }

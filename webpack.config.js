@@ -81,7 +81,14 @@ var config = {
         new HtmlWebpackPlugin(getHtmlConfig('user-center-update', '修改个人信息')),
         new HtmlWebpackPlugin(getHtmlConfig('user-pass-update', '修改密码')),
         new HtmlWebpackPlugin(getHtmlConfig('result', '操作结果')),
-    ]
+
+        new webpack.HotModuleReplacementPlugin()
+    ],
+    devServer : {
+        hot                 :false,
+        inline              : true, // 实时刷新
+        port                : 8088
+    }
 };
 
 if('dev' === WEBPACK_ENV){
