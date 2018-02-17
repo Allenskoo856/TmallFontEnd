@@ -2,7 +2,7 @@
 
 'use strict';
 
-// var Hogan = require('hogan');
+var Hogan = require('hogan.js');
 var conf = {
     serverHost : ''
 };
@@ -46,12 +46,12 @@ var _mm = {
         var result  = window.location.search.substr(1).match(reg);
         return result ? decodeURIComponent(result[2]) : null;
     },
-   /* // 渲染html模板
+    // 渲染html模板
     renderHtml : function(htmlTemplate, data){
         var template    = Hogan.compile(htmlTemplate),
             result      = template.render(data);
         return result;
-    },*/
+    },
     // 成功提示
     successTips : function(msg){
         alert(msg || '操作成功！');

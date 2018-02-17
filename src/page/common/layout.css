@@ -1,0 +1,89 @@
+
+/* css reset*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #f6f6f6;
+    font: 12px/1.5 Tahoma, Arial, "Microsoft YaHei UI", sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    display: block;
+    border: none;
+}
+
+label {
+    cursor: pointer;
+}
+
+input[type='checkbox'] {
+    cursor: pointer;
+}
+
+/* 定宽布局*/
+.w {
+    width: 1080px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+/* 全局样式 */
+.hide {
+    display: none;
+}
+
+/* 超链接样式 */
+.link {
+    color: #999;
+    cursor: pointer;
+    text-decoration: none;
+}
+.link:hover {
+    color: #e80012;
+}
+.link-text {
+    color: #999999;
+    text-decoration: none;
+}
+/* btn */
+.btn {
+    display: inline-block;
+    padding: 0 20px;
+    height: 40px;
+    line-height: 40px;
+    vertical-align: middle;
+    border: none;
+    background: #c60023;
+    font-size: 17px;
+    font-weight: bold;
+    color: #fff;
+    outline: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+.btn-min {
+    height: 25px;
+    line-height: 25px;
+    font-size: 12px;
+    padding: 0 10px;
+}
+
+/* lording*/
+.loading {
+    margin: 10px  auto;
+    display: block;
+    width: 65px;
+    height: 65px;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    background: url("../../image/icon/loading.gif") no-repeat;
+    opacity: .6;
+}
