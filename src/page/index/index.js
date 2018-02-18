@@ -1,13 +1,11 @@
 "use strict";
 
+
+require('page/common/nav-simple/index.js');
+require('page/common/nav/index.js');
 var _mm = require('util/mm.js');
 
-console.log(_mm.getUrlParam('test'));
 
-var html = '<div>{{data}}</div>';
-var data = {
-    data : 123
-};
 
-console.log(_mm.renderHtml(html, data));
+
 
