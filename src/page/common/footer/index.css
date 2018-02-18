@@ -1,10 +1,18 @@
-.links {
+.footer {
+    padding-bottom: 10px;
+}
+
+.footer .links {
     text-align: center;
     color: #666;
     line-height: 30px;
 }
 
-.copyright {
+.footer .links .link {
+    padding: 0 10px;
+}
+
+ .footer .copyright {
     text-align: center;
     line-height: 30px;
     color: #666666;
