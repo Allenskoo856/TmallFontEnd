@@ -1,0 +1,93 @@
+
+/* 最外层容器*/
+
+.page-wrap {
+    padding: 40px 0;
+    background: #e72955;
+}
+
+/* 用户登陆框*/
+.user-con {
+    position: relative;
+    width: 400px;
+    background: #ffffff;
+    margin: 0 auto;
+}
+
+.user-con .user-title {
+    text-align: center;
+    padding: 10px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: #666666;
+    border-bottom: 1px solid #dddddd;
+}
+
+.user-con .user-box {
+    padding: 20px;
+}
+
+.user-con .user-box  .error-item {
+    display: none;
+    position: relative;
+    padding: 10px 0 7px 40px;
+    margin-bottom: 10px;
+    border: 1px solid red;
+    color: red;
+    background: #fde9e9;
+}
+
+.user-con .user-box  .error-icon {
+    position: absolute;
+    left: 14px;
+    top: 50%;
+    font-size: 14px;
+    margin-top: -7px;
+}
+
+.user-con .user-item {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.user-con .user-item .user-label {
+    position: absolute;
+    left: 1px;
+    top: 1px;
+    bottom: 1px;
+    width: 40px;
+    line-height: 36px;
+    background: #f3f3f3;
+    color: #d3d3d3;
+    text-align: center;
+    border-right:1px solid #bdbdbd;
+}
+
+.user-con .user-item .user-content {
+    padding: 10px 0 10px 50px;
+    width: 308px;
+    height: 18px;
+    line-height: 18px;
+    font-size: 15px;
+    border: 1px solid #bdbdbd;
+    outline: none;
+}
+
+
+.user-con .btn-submit {
+    width: 100%;
+    padding: 6px 0;
+    text-align: center;
+    font-size: 20px;
+}
+
+/*挑转链接*/
+.user-con .link-item {
+    text-align: right;
+    margin-top: 10px;
+}
+
+.user-con .link-item .link {
+    margin-left: 10px;
+    color: #999999;
+}
