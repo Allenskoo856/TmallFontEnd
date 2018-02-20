@@ -53,10 +53,9 @@ var page = {
         // 验证成功
         if (validateResult.status) {
             _user.login(formData, function (res) {
-
+                window.location.href = _mm.getUrlParam('redirect') || './index.html';
             }, function (errMsg) {
                 formError.show(errMsg);
-                console.log(errMsg);
             });
         } else {
             // 错误提示

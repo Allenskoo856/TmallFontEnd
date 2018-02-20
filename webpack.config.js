@@ -85,7 +85,7 @@ var config = {
         new webpack.HotModuleReplacementPlugin()
     ],
     devServer : {
-        hot: true,
+        hot: false,
         inline              : true, // 实时刷新
         port                : 8088
     }
