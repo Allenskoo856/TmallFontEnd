@@ -49,7 +49,7 @@ var page = {
             // 表单验证结果
             validateResult = this.formValidate(formData);
 
-        console.log(validateResult.status);
+
         // 验证成功
         if (validateResult.status) {
             _user.login(formData, function (res) {
@@ -81,7 +81,6 @@ var page = {
         // 通过验证，返回正确提示
         result.status = true;
         result.msg = '验证通过';
-        console.log(result);
         return result;
     }
 };

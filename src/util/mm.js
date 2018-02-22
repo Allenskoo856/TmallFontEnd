@@ -15,6 +15,9 @@ var _mm = {
             type        : param.method  || 'get',
             url         : param.url     || '',
             dataType    : param.type    || 'json',
+            xhrFields: {
+                withCredentials: true  // 携带跨域cookie
+            },
             data        : param.data    || '',
             success     : function(res){
                 // 请求成功
