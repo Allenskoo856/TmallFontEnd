@@ -30,3 +30,14 @@
     height: 44px;
     width: 80px;
 }
+
+/*  面博螯蟹导航*/
+.crumb {
+    margin-bottom: 15px;
+    height: 50px;
+    line-height: 50px;
+    background: #eeeeee;
+    color: #888888;
+    font-size: 14px;
+    border-top: 2px solid #c60023;
+}

@@ -13,6 +13,8 @@ var _mm             = require('util/mm.js');
 navSide.init({
     name : 'user-pass-update'
 });
+
+
 /*$(function() {
     // 渲染banner的html
     var bannerHtml  = _mm.renderHtml(templateBanner);
