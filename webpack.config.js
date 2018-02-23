@@ -92,8 +92,8 @@ var config = {
     }
 };
 
-if ('dev' === WEBPACK_ENV) {
+/*if ('dev' === WEBPACK_ENV) {
     config.entry.common.push('webpack-dev-server/client?http://localhost:8088/');
-}
+}*/
 
 module.exports = config;
