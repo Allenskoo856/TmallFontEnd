@@ -14,16 +14,10 @@ var _mm             = require('util/mm.js');
 var temperateBanner = require('./index.string');
 
 
-$(function () {
-    var bannerHtml = _mm.renderHtml(temperateBanner);
-    $('.banner-con').html(bannerHtml);
-    $('.banner').unslider();
-});
 
-
-/*$(function() {
+$(function() {
     // 渲染banner的html
-    var bannerHtml  = _mm.renderHtml(templateBanner);
+    var bannerHtml  = _mm.renderHtml(temperateBanner);
     $('.banner-con').html(bannerHtml);
     // 初始化banner
     var $slider     = $('.banner').unslider({
@@ -34,4 +28,4 @@ $(function () {
         var forward = $(this).hasClass('prev') ? 'prev' : 'next';
         $slider.data('unslider')[forward]();
     });
-});*/
+});
