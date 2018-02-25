@@ -8,7 +8,7 @@ var _mm = require('util/mm.js');
 var header = {
     init: function () {
         this.bindEvent();
-        return this;
+        this.onLoad();
     },
     onLoad: function () {
         var keyword = _mm.getUrlParam('keyword');

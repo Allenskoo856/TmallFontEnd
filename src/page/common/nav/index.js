@@ -43,9 +43,9 @@ var nav = {
         _user.checkLogin(function (res) {
             $('.user.not-login').hide();
             $('.user.login').show().find('.username').text(res.username);
-            console.log(res);
+
         }, function (errMsg) {
-            console.log(errMsg);
+
         });
     },
     loadCartCount: function () {
