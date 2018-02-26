@@ -18,3 +18,7 @@
     </li>
 
 {{/list}}
+
+{{^list}}
+    <p class="err-tip">很抱歉, 实在找不到你要的商品.</p>
+{{/list}}

@@ -16,7 +16,7 @@ var page = {
             categoryId      : _mm.getUrlParam('categoryId') || '',
             orderBy         : _mm.getUrlParam('orderBy')    || 'default',
             pageNum         : _mm.getUrlParam('pageNum')    || 1,
-            pageSize        : _mm.getUrlParam('pageSize')   || 10
+            pageSize        : _mm.getUrlParam('pageSize')   || 20
         }
     },
     init : function(){
