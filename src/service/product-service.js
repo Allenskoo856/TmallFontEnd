@@ -1,6 +1,4 @@
 
-
-
 'use strict';
 
 var _mm = require('util/mm.js');
@@ -27,4 +25,5 @@ var _product = {
         });
     }
 }
+
 module.exports = _product;
