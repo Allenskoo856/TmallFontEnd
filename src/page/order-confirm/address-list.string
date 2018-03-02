@@ -13,7 +13,7 @@
 </div>
 {{/list}}
 
-<div class="address-item address-add">
+<div class="address-add">
     <div class="address-new">
         <i class="fa fa-plus"></i>
         <div class="text">使用新地址</div>
