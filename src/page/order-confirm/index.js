@@ -3,27 +3,30 @@
 require('./index.css');
 require('page/common/header/index.js');
 require('page/common/nav/index.js');
-var  addressModal = require('./address-modal.js');
 
-var _mm = require('util/mm.js');
-var _order = require('service/order-service.js');
-var _Address = require('service/address-service.js');
-var templateAddress = require('./address-list.string');
-var templateProduct = require('./product-list.string');
+var  addressModal       = require('./address-modal.js');
+var _mm                 = require('util/mm.js');
+var _order              = require('service/order-service.js');
+var _Address            = require('service/address-service.js');
+var templateAddress     = require('./address-list.string');
+var templateProduct     = require('./product-list.string');
 
 
 var page = {
     data: {
         selectedAddressID: null
     },
+
     init: function () {
         this.onLoad();
         this.bindEvent();
     },
+
     onLoad: function () {
         this.loadAddressList();
         this.loadProductList();
     },
+
     bindEvent: function () {
         var _this = this;
 
@@ -36,10 +39,10 @@ var page = {
 
         // 订单的提交
         $(document).on('click', '.order-submit', function () {
-            var shipingId = _this.data.selectedAddressID;
-            if (shipingId) {
+            var shippingId = _this.data.selectedAddressID;
+            if (shippingId) {
                 _order.createOrder({
-                    shipingId : shipingId
+                    shipingId : shippingId
                 }, function (res) {
                     window.location.href = './payment.html?orderNumber=' + res.orderNo;
                 }, function (errMsg) {
@@ -92,10 +95,7 @@ var page = {
 
 
     },
-    // 加载list数据
-    loadDetail: function () {
 
-    },
     // 加载地址列表
     loadAddressList: function () {
         var _this = this;
@@ -108,6 +108,7 @@ var page = {
             $('.address-con').html('<p class="err-tip">地址加载失败, 请刷新后重试</p>');
         })
     },
+
     // 处理地址列表中选中状态
     addressFilter: function (data) {
         if (this.data.selectedAddressID) {
@@ -126,7 +127,6 @@ var page = {
     },
 
     loadProductList: function () {
-        var _this = this;
         $('.product-con').html('<div class="loading"></div>');
         _order.getProductList(function (res) {
             var ProductListHtml = _mm.renderHtml(templateProduct, res);

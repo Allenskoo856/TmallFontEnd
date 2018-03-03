@@ -4,7 +4,6 @@
 
 
 var _mm                     = require('util/mm.js');
-var _order                  = require('service/order-service.js');
 var _Address                = require('service/address-service.js');
 var templateAddressModal    = require('./address-modal.string');
 var _cities                 = require('util/cities/index.js');
@@ -78,6 +77,7 @@ var addressModal = {
         this.loadProvince();
 
     },
+
     loadProvince : function () {
         var provinces = _cities.getProvinces() || [],
             $provinceSelect = this.modalWrap.find('#receiver-province');
@@ -89,6 +89,7 @@ var addressModal = {
             this.loadCity(this.option.data.receiverProvince);
         }
     },
+
     // 加载城市信息
     loadCity : function (provinceName) {
         var cities = _cities.getCities(provinceName) || [],
@@ -98,8 +99,8 @@ var addressModal = {
         if (this.option.isUpdate && this.option.data.receiverCity) {
             $citySelect.val(this.option.data.receiverCity);
         }
-
     },
+
     // 获取select款的选项, 输入数组 输出html
     getSelectOption : function (optionArray) {
         var html = '<option value="">请选择</option>';
@@ -108,6 +109,7 @@ var addressModal = {
         }
         return html;
     },
+
     // 获取表单收件人的信息,并且做表单的验证
     getReceiverInfo : function () {
         var receiverInfo = {},

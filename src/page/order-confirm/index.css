@@ -78,7 +78,7 @@
 
 .product-table .cell-img {
     padding: 10px;
-    width: 30%;
+    width: 10%;
     text-align: left;
 }
 
@@ -89,6 +89,10 @@
 }
 
 .product-table .cell-info {
+    width: 20%;
+    text-align: center;
+}
+.product-table .cell-price {
     width: 20%;
     text-align: center;
 }
