@@ -1,0 +1,118 @@
+/*  最上面*/
+.order-info .text-line {
+    height: 30px;
+    line-height: 30px;
+}
+
+.order-info .text-line .text {
+    margin-right: 30px;
+}
+
+.order-info .btn {
+    width: 75px;
+    padding: 0;
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+    font-size: 12px;
+    margin-right: 10px;
+}
+
+
+
+
+
+/*表头*/
+.product-table{
+    width: 100%;
+    border-collapse: collapse;
+    background: #fafafa;
+    margin-bottom: 20px;
+}
+
+.product-table .cell {
+    font-weight: bold;
+    padding: 10px 0;
+    color: #666666;
+    border-bottom: 1px dashed #eeeeee;
+    background: #fafafa;
+}
+
+.product-table.header {
+    background: #eeeeee;
+}
+
+.product-table .order-info {
+    background: #eeeeee;
+    padding: 10px;
+    color: #999999;
+}
+
+.product-table .order-info .order-text {
+    margin-right: 25px;
+}
+
+.product-table .order-info .order-num {
+    font-weight: bold;
+}
+
+.product-table .order-info .order-total {
+    font-weight: bold;
+    color: #c60023;
+}
+
+.product-table .order-info .order-detail {
+    float: right;
+    font-weight: bold;
+}
+
+
+.product-table .cell-img {
+    padding: 10px;
+    width: 10%;
+}
+
+.product-table .cell-img .p-img {
+    width: 80px;
+    height: 80px;
+    border: 1px solid #dddddd;
+}
+
+.product-table .cell-price {
+    width: 15%;
+    text-align: center;
+}
+
+.product-table .cell-info {
+    width: 45%;
+    text-align: left;
+    padding: 0 10px;
+}
+
+.product-table .cell-count {
+    width: 15%;
+    text-align: center;
+}
+
+.product-table .cell-total {
+    width: 15%;
+    text-align: center;
+}
+
+/*总价钱*/
+.total {
+    text-align: right;
+    font-size: 14px;
+    height: 40px;
+    line-height: 40px;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+.total .total-price {
+    font-weight: bold;
+    color: #c60023;
+}
+
+
+
+

@@ -42,7 +42,7 @@ var page = {
             var shippingId = _this.data.selectedAddressID;
             if (shippingId) {
                 _order.createOrder({
-                    shipingId : shippingId
+                    shippingId : shippingId
                 }, function (res) {
                     window.location.href = './payment.html?orderNumber=' + res.orderNo;
                 }, function (errMsg) {
