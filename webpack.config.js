@@ -1,13 +1,8 @@
-/**
- *
- *
- */
+
+
 var webpack = require("webpack");
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
-
-// 环境变量配置，dev / online
-var WEBPACK_ENV = process.env.WEBPACK_ENV || 'dev';
 
 // 获取html-webpack-plugin参数的方法
 var getHtmlConfig = function (name, title) {
@@ -39,7 +34,8 @@ var config = {
         'user-center'       : ['./src/page/user-center/index.js'],
         'user-center-update': ['./src/page/user-center-update/index.js'],
         'user-pass-update'  : ['./src/page/user-pass-update/index.js'],
-        'result'            : ['./src/page/result/index.js']
+        'result'            : ['./src/page/result/index.js'],
+        'about'            : ['./src/page/about/index.js']
     },
     output: {
         path: './dist',
@@ -89,6 +85,7 @@ var config = {
         new HtmlWebpackPlugin(getHtmlConfig('user-center-update', '修改个人信息')),
         new HtmlWebpackPlugin(getHtmlConfig('user-pass-update', '修改密码')),
         new HtmlWebpackPlugin(getHtmlConfig('result', '操作结果')),
+        new HtmlWebpackPlugin(getHtmlConfig('about', '关于mmall商城')),
 
         new webpack.HotModuleReplacementPlugin()
     ],
@@ -100,8 +97,5 @@ var config = {
     }
 };
 
-/*if ('dev' === WEBPACK_ENV) {
-    config.entry.common.push('webpack-dev-server/client?http://localhost:8088/');
-}*/
 
 module.exports = config;
