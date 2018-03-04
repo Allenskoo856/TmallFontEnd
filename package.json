@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "webpack-dev-server --inline --port 8088",
-    "dist": "webpack -p",
+    "dist": "set WEBPACK_ENV=online && webpack -p",
     "de": "webpack-dev-server --open "
   },
   "repository": {
