@@ -25,18 +25,37 @@ var page = {
     onLoad: function () {
 
         // 加载detail 数据
-        this.loadDetail();
+        this.loadPaymentInfo();
     },
 
 
-    // 加载订单列表
-    loadDetail: function () {
-        var orderDetailHtml = '',
+    // 加载支付订单列表
+    loadPaymentInfo: function () {
+        var paymentHtml = '',
             _this = this,
-            $Con = $('.content');
+            $Con = $('.page-wrap');
         $Con.html('<div class="loading"></div>');
+        _payment.getPaymentInfo(_this.data.orderNumber, function (res) {
+            paymentHtml = _mm.renderHtml(temperateIndex, res);
+            $Con.html(paymentHtml);
+            _this.listenOrderStatus();
+        }, function (errMsg) {
+            $Con.html('<p class="err-tip">' + errMsg + '</p>');
+        });
 
+    },
 
+    listenOrderStatus : function () {
+        var _this = this;
+        this.paymentTimer = window.setInterval(function () {
+            _payment.getPaymentStatus(_this.data.orderNumber, function (res) {
+                if (res === true) {
+                    window.location.href = './result.html?type=payment&orderNumber=' + _this.data.orderNumber;
+                }
+            }, function (errMsg) {
+
+            });
+        }, 5e3)
     }
 };
 
