@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Allenskoo856/HappyTmallFontEnd.git"
+    "url": "git+https://github.com/Allenskoo856/TmallFontEnd.git"
   },
   "author": "xcallen",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Allenskoo856/HappyTmallFontEnd/issues"
+    "url": "https://github.com/Allenskoo856/TmallFontEnd/issues"
   },
-  "homepage": "https://github.com/Allenskoo856/HappyTmallFontEnd#readme",
+  "homepage": "https://github.com/Allenskoo856/TmallFontEnd#readme",
   "devDependencies": {
     "css-loader": "^0.28.1",
     "extract-text-webpack-plugin": "^1.0.1",
