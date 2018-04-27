@@ -43,7 +43,7 @@ var config = {
     },
     output: {
         path        : __dirname + '/dist',
-        publicPath  :   'dev' === WEBPACK_ENV ? '/dist/' : '//s.happymmall.com/mmall-fe/dist', // 判断是否为线上环境
+        publicPath  :   'dev' === WEBPACK_ENV ? '/dist/' : '//s.mmall.zonglun.me/dist', // 判断是否为线上环境
         filename    : 'js/[name].js'
     },
     externals: {
