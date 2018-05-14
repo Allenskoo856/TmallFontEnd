@@ -26,7 +26,8 @@ var config = {
     // path && publickPath
     output: {
         path: __dirname + '/dist/',
-        publicPath: WEBPACK_ENV === 'online' ? '//s.mmall.zonglun.me/admin/dist/' : '/dist/',
+        // publicPath: WEBPACK_ENV === 'online' ? '//s.mmall.zonglun.me/admin/dist/' : '/dist/'
+        publicPath: '//s.mmall.zonglun.me/admin/dist/',
         filename: 'js/[name].js'
     },
     resolve: {

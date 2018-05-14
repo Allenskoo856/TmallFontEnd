@@ -11,8 +11,8 @@ const conf = {
     // online
     // serverHost: 'http://admin.happymmall.com'
     // dev
-    serverHost: '',
-    imageHost: 'http://img.happymmall.com/',
+    serverHost: 'http://admin.mmall.zonglun.me',
+    imageHost: 'http://img.mmall.zonglun.me/',
 }
 
 class MMUtil {
